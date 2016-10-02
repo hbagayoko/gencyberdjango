@@ -12,6 +12,7 @@ router.register(r'userprofiles', views.UserprofileViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
+    url(r'^session/', views.Session.as_view()),
 
     #Django Rest Auth
     url(r'^auth/', include('rest_framework.urls')),
